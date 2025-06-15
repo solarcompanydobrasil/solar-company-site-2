@@ -361,23 +361,6 @@ img.capa {
   padding: 15px 10px;
 }
   
-/* Alinhamento do botão hambúrguer */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-.navbar-toggle {
-  margin-left: auto;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Centralização elegante da faixa com texto */
 .capa-container {
   position: relative;
 }
@@ -396,16 +379,23 @@ img.capa {
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
-  padding: 15px 20px;
-  border-radius: 8px;
+  padding: 15px 10px;
+  width: 100%;
   box-sizing: border-box;
-  max-width: 90%;
+}
+.navbar-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 768px) {
   .texto-capa {
-    font-size: 2.2rem;
+    font-size: 2rem;
     max-width: 60%;
+    padding: 20px;
+    border-radius: 10px;
   }
 }
 </style>
@@ -504,24 +494,11 @@ img.capa {
 </div>
 </nav>
 </header>
-<!--
-<!-- Início da seção da imagem da capa -->
---&gt;
-  <div class="capa-container">
+<div class="capa-container">
 <img class="capa" src="Capa.png"/>
-<!--<!-- Texto sobreposto com fundo cinza transparente -->
---&gt;
-   <div class="texto-capa">
+<div class="texto-capa">
     Materiais elétricos e energia solar
    </div>
-</div>
-<!--
-<!-- Fim da seção da imagem da capa -->
---&gt;
-  <div class="banner" id="home">
-<h1>
-    Materiais elétricos e energia solar
-   </h1>
 </div>
 <section id="sobre">
 <h2>
