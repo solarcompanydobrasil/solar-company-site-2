@@ -360,7 +360,36 @@ img.capa {
   text-align: center;
   padding: 15px 10px;
 }
-  </style>
+  
+.capa-container {
+  position: relative;
+}
+.capa-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.texto-capa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(51, 51, 51, 0.6);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.navbar-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+</style>
 <style>
    .hamburger {
     display: none;
@@ -456,21 +485,23 @@ img.capa {
 </div>
 </nav>
 </header>
-<!--
-<!-- Início da seção da imagem da capa -->
---&gt;
+
+
   <div class="capa-container">
 <img class="capa" src="Capa.png"/>
-<!--<!-- Texto sobreposto com fundo cinza transparente -->
---&gt;
+
+
    <div class="texto-capa">
     Materiais elétricos e energia solar
    </div>
 </div>
-<!--
-<!-- Fim da seção da imagem da capa -->
---&gt;
-  
+
+
+  <div class="banner" id="home">
+<h1>
+    Materiais elétricos e energia solar
+   </h1>
+</div>
 <section id="sobre">
 <h2>
     Sobre a Empresa
