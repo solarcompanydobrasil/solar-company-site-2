@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-<head>
-<link href="favicon.png" rel="icon" type="image/png"/><meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Solar Company do Brasil</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"/>
-<style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+ <head>
+  <link href="favicon.png" rel="icon" type="image/png"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Solar Company do Brasil
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <style>
+   * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Roboto', sans-serif; line-height: 1.6; }
     header {
       background-color: #003366; /* azul escuro */
@@ -357,9 +359,9 @@ img.capa {
   text-align: center;
   padding: 15px 10px;
 }
-</style>
-<style>
-  .hamburger {
+  </style>
+  <style>
+   .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -390,82 +392,166 @@ img.capa {
       display: flex;
     }
   }
-</style>
-<script>
-  function toggleMenu() {
+  </style>
+  <script>
+   function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
   }
-</script>
-<script>
-function toggleMenu() {
+  </script>
+  <script>
+   function toggleMenu() {
   const menu = document.getElementById('mobileMenu');
   menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 }
-</script>
-</head>
-<body>
-<div class="mobile-menu-overlay-right" id="mobileMenu">
-<div class="mobile-menu-content">
-<span class="closebtn" onclick="toggleMobileMenu()">×</span>
-<a href="#home">Home</a>
-<a href="#sobre">Sobre</a>
-<a href="#produtos">Produtos</a>
-<a href="#contato">Contato</a>
-</div>
-</div>
-<header>
-<nav>
-<div class="menu-wrapper">
-<div style="display: flex; align-items: center; gap: 10px;">
-<img alt="Logo" src="Logo.png" style="height: 40px;"/>
-<strong class="logo-text">Solar Company do Brasil</strong>
-</div>
-<div class="menu-links">
-<a href="#home">Home</a>
-<a href="#sobre">Sobre</a>
-<a href="#produtos">Produtos</a>
-<a href="#contato">Contato</a>
-</div>
-<div class="hamburger-icon" onclick="toggleMobileMenu()">☰</div>
-</div>
-</nav>
-</header><div class="capa-container"><img class="capa" src="Capa.png"/><div class="texto-capa">Materiais elétricos e energia solar</div></div> <div class="banner" id="home">
-<h1>Materiais elétricos e energia solar</h1>
-</div> <section id="sobre">
-<h2>Sobre a Empresa</h2>
-<p>Somos especialistas em soluções de energia solar e fornecimento de materiais elétricos. A Solar Company do Brasil oferece tecnologia, economia e sustentabilidade para residências e empresas.</p>
-</section> <section id="produtos">
-<h2>Produtos</h2>
-<div class="produtos">
-<div class="produto">
-<img alt="Painel Solar" src="Secaosolar.png"/>
-<h3>Energia Solar</h3>
-<p>Alta eficiência e durabilidade</p>
-</div>
-<div class="produto">
-<img alt="Fios e Cabos" src="MateriaisEletricos_final.png"/>
-<h3>Materiais Elétricos</h3>
-<p>Materiais de qualidade para instalações seguras</p>
-</div>
-<div class="produto">
-<img alt="Materiais Hidráulicos" src="MateriaisHidraulicos_final.png"/>
-<h3>Materiais Hidráulicos</h3>
-<p>Componentes para sistemas hidráulicos e sanitários</p>
-</div>
-</div>
-</section> <section id="contato">
-<h2>Contato</h2>
-<p><strong>Endereço:</strong> Av. Amazonas, 1521 - Brasileia - Betim</p>
-<p><strong>Telefone:</strong> (31) 3592-3190</p>
-<p><strong>Email:</strong> solarcompanydobrasil@gmail.com</p>
-<p><strong>Atendimento:</strong> Seg à Sex 7h às 17:30h | Sáb 7h às 12:30h</p>
-<iframe allowfullscreen="" class="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.3085659429024!2d-44.21132512475406!3d-19.974832881428973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690d8e5e5d5d1%3A0x123456789abcdef!2sAv.%20Amazonas%2C%201521%20-%20Brasileia%2C%20Betim%20-%20MG%2C%2032650-150!5e0!3m2!1spt-BR!2sbr!4v1718400000000!5m2!1spt-BR!2sbr"></iframe>
-</section> <a class="whatsapp" href="https://wa.me/553135923190" target="_blank">
-    Fale conosco no WhatsApp
+  </script>
+ </head>
+ <body>
+  <div class="mobile-menu-overlay-right" id="mobileMenu">
+   <div class="mobile-menu-content">
+    <span class="closebtn" onclick="toggleMobileMenu()">
+     ×
+    </span>
+    <a href="#home">
+     Home
+    </a>
+    <a href="#sobre">
+     Sobre
+    </a>
+    <a href="#produtos">
+     Produtos
+    </a>
+    <a href="#contato">
+     Contato
+    </a>
+   </div>
+  </div>
+  <header>
+   <nav>
+    <div class="menu-wrapper">
+     <div style="display: flex; align-items: center; gap: 10px;">
+      <img alt="Logo" src="Logo.png" style="height: 40px;"/>
+      <strong class="logo-text">
+       Solar Company do Brasil
+      </strong>
+     </div>
+     <div class="menu-links">
+      <a href="#home">
+       Home
+      </a>
+      <a href="#sobre">
+       Sobre
+      </a>
+      <a href="#produtos">
+       Produtos
+      </a>
+      <a href="#contato">
+       Contato
+      </a>
+     </div>
+     <div class="hamburger-icon" onclick="toggleMobileMenu()">
+      ☰
+     </div>
+    </div>
+   </nav>
+  </header>
+  <!--
+<!-- Início da seção da imagem da capa -->
+-->
+  <div class="capa-container">
+   <img class="capa" src="Capa.png"/>
+   <!--<!-- Texto sobreposto com fundo cinza transparente -->
+-->
+   <div class="texto-capa">
+    Materiais elétricos e energia solar
+   </div>
+  </div>
+  <!--
+<!-- Fim da seção da imagem da capa -->
+-->
+  <div class="banner" id="home">
+   <h1>
+    Materiais elétricos e energia solar
+   </h1>
+  </div>
+  <section id="sobre">
+   <h2>
+    Sobre a Empresa
+   </h2>
+   <p>
+    Somos especialistas em soluções de energia solar e fornecimento de materiais elétricos. A Solar Company do Brasil oferece tecnologia, economia e sustentabilidade para residências e empresas.
+   </p>
+  </section>
+  <section id="produtos">
+   <h2>
+    Produtos
+   </h2>
+   <div class="produtos">
+    <div class="produto">
+     <img alt="Painel Solar" src="Secaosolar.png"/>
+     <h3>
+      Energia Solar
+     </h3>
+     <p>
+      Alta eficiência e durabilidade
+     </p>
+    </div>
+    <div class="produto">
+     <img alt="Fios e Cabos" src="MateriaisEletricos_final.png"/>
+     <h3>
+      Materiais Elétricos
+     </h3>
+     <p>
+      Materiais de qualidade para instalações seguras
+     </p>
+    </div>
+    <div class="produto">
+     <img alt="Materiais Hidráulicos" src="MateriaisHidraulicos_final.png"/>
+     <h3>
+      Materiais Hidráulicos
+     </h3>
+     <p>
+      Componentes para sistemas hidráulicos e sanitários
+     </p>
+    </div>
+   </div>
+  </section>
+  <section id="contato">
+   <h2>
+    Contato
+   </h2>
+   <p>
+    <strong>
+     Endereço:
+    </strong>
+    Av. Amazonas, 1521 - Brasileia - Betim
+   </p>
+   <p>
+    <strong>
+     Telefone:
+    </strong>
+    (31) 3592-3190
+   </p>
+   <p>
+    <strong>
+     Email:
+    </strong>
+    solarcompanydobrasil@gmail.com
+   </p>
+   <p>
+    <strong>
+     Atendimento:
+    </strong>
+    Seg à Sex 7h às 17:30h | Sáb 7h às 12:30h
+   </p>
+   <iframe allowfullscreen="" class="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.3085659429024!2d-44.21132512475406!3d-19.974832881428973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690d8e5e5d5d1%3A0x123456789abcdef!2sAv.%20Amazonas%2C%201521%20-%20Brasileia%2C%20Betim%20-%20MG%2C%2032650-150!5e0!3m2!1spt-BR!2sbr!4v1718400000000!5m2!1spt-BR!2sbr">
+   </iframe>
+  </section>
+  <a class="whatsapp" href="https://wa.me/553135923190" target="_blank">
+   Fale conosco no WhatsApp
   </a>
-<script>
-function toggleMobileMenu() {
+  <script>
+   function toggleMobileMenu() {
   const menu = document.getElementById("mobileMenu");
   if (menu.style.width === "250px") {
     menu.style.width = "0";
@@ -473,5 +559,6 @@ function toggleMobileMenu() {
     menu.style.width = "250px";
   }
 }
-</script></body>
+  </script>
+ </body>
 </html>
