@@ -2,15 +2,12 @@
 
 <html lang="pt-br">
 <head>
-<link href="favicon.png" rel="icon" type="image/png"/>
-<meta charset="utf-8"/>
+<link href="favicon.png" rel="icon" type="image/png"/><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   Solar Company do Brasil
-  </title>
+<title>Solar Company do Brasil</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"/>
 <style>
-   * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Roboto', sans-serif; line-height: 1.6; }
     header {
       background-color: #003366; /* azul escuro */
@@ -111,359 +108,30 @@
 }
 
 
-/* Menu responsivo melhorado */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin-left: auto;
-}
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-}
-.menu-links {
-  display: flex;
-  gap: 1.5rem;
-}
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-}
-.mobile-menu a {
-  margin: 0.5rem 1rem;
-}
-@media (max-width: 768px) {
-  .menu-links {
-    display: none;
-  }
-  .hamburger {
+@media (min-width: 768px) {
+  nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
   }
-  .mobile-menu {
-    display: flex;
-  }
-}
-
-.logo-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-}
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.menu-items {
-  display: flex;
-  gap: 1.5rem;
-}
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
-}
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: white;
-}
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-  .menu-items {
-    display: none;
-    flex-direction: column;
+  .banner h1 {
+    font-size: 2.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    margin-top: 1rem;
-  }
-  body.menu-open .menu-items {
-    display: flex;
-  }
-}
-
-/* Menu padrão */
-.menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-}
-.logo-text {
-  font-weight: bold;
-  color: white;
-}
-
-/* Hambúrguer mobile */
-.hamburger-icon {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Menu lateral mobile */
-.mobile-menu-overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1500;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.8);
-  overflow-x: hidden;
-  transition: 0.3s;
-}
-.mobile-menu-content {
-  background-color: #003366;
-  width: 250px;
-  height: 100%;
-  padding: 60px 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.mobile-menu-content a {
-  color: white;
-  font-size: 18px;
-  margin: 10px 0;
-  text-decoration: none;
-  font-weight: bold;
-}
-.closebtn {
-  font-size: 28px;
-  color: white;
-  margin-left: auto;
-  cursor: pointer;
-}
-
-/* Mostrar menu mobile somente em telas pequenas */
-@media (max-width: 768px) {
-  .hamburger-icon {
-    display: block;
-  }
-  .menu-wrapper .menu-links {
-    display: none;
-  }
-  header {
-    position: static;
-  }
-}
-
-/* Imagem da capa */
-img.capa {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-height: 500px;
-}
-@media (max-width: 768px) {
-  img.capa {
-    max-height: none;
-  }
-}
-
-.menu-links {
-  display: flex;
-  gap: 1.5rem;
-}
-.menu-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Esconder menu-links e mostrar hamburguer só no mobile */
-@media (max-width: 768px) {
-  .menu-links {
-    display: none;
-  }
-  .hamburger-icon {
-    display: block;
-  }
-}
-
-img.capa {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-height: 500px;
-}
-@media (max-width: 768px) {
-  img.capa {
-    max-height: none;
-  }
-}
-
-.mobile-menu-overlay-right {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1500;
-  top: 0;
-  right: 0;
-  background-color: rgba(0,0,0,0.8);
-  overflow-x: hidden;
-  transition: 0.3s;
-}
-.mobile-menu-overlay-right .mobile-menu-content {
-  background-color: #003366;
-  width: 250px;
-  height: 100%;
-  padding: 60px 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.mobile-menu-overlay-right .mobile-menu-content a {
-  color: white;
-  font-size: 18px;
-  margin: 10px 0;
-  text-decoration: none;
-  font-weight: bold;
-}
-.mobile-menu-overlay-right .closebtn {
-  font-size: 28px;
-  color: white;
-  margin-left: auto;
-  cursor: pointer;
-}
-
-.capa-container {
-  position: relative;
-}
-.capa-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.texto-capa {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  background-color: rgba(51, 51, 51, 0.6); /* fundo cinza com transparência */
-  color: white;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 10px;
-}
-  
-.capa-container {
-  position: relative;
-}
-.capa-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.texto-capa {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(51, 51, 51, 0.6);
-  color: white;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.navbar-toggle {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-
-
-@media (min-width: 768px) {
-  .texto-capa {
-    font-size: 2.5rem;
-    padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    width: fit-content;
-    margin: 0 auto;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 1px 1px 4px black;
   }
 }
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-  .texto-capa {
-    font-size: 2.5rem;
-    padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-  .texto-capa {
-    font-size: 2.5rem;
-    padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-  .texto-capa {
-    font-size: 2.5rem;
-    padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-
-
 </style>
 <style>
-   .hamburger {
+  .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -494,160 +162,62 @@ img.capa {
       display: flex;
     }
   }
-  </style>
+</style>
 <script>
-   function toggleMenu() {
+  function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
   }
-  </script>
-<script>
-   function toggleMenu() {
-  const menu = document.getElementById('mobileMenu');
-  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-}
-  </script>
+</script>
 </head>
 <body>
-<div class="mobile-menu-overlay-right" id="mobileMenu">
-<div class="mobile-menu-content">
-<span class="closebtn" onclick="toggleMobileMenu()">
-     ×
-    </span>
-<a href="#home">
-     Home
-    </a>
-<a href="#sobre">
-     Sobre
-    </a>
-<a href="#produtos">
-     Produtos
-    </a>
-<a href="#contato">
-     Contato
-    </a>
-</div>
-</div>
 <header>
 <nav>
-<div class="menu-wrapper" style="justify-content: space-between;">
 <div style="display: flex; align-items: center; gap: 10px;">
 <img alt="Logo" src="Logo.png" style="height: 40px;"/>
-<strong class="logo-text">
-       Solar Company do Brasil
-      </strong>
+<strong>Solar Company do Brasil</strong>
 </div>
-<div class="menu-links">
-<a href="#home">
-       Home
-      </a>
-<a href="#sobre">
-       Sobre
-      </a>
-<a href="#produtos">
-       Produtos
-      </a>
-<a href="#contato">
-       Contato
-      </a>
-</div>
-<div class="hamburger-icon" onclick="toggleMobileMenu()">
-      ☰
-     </div>
+<div>
+<a href="#home">Home</a>
+<a href="#sobre">Sobre</a>
+<a href="#produtos">Produtos</a>
+<a href="#contato">Contato</a>
 </div>
 </nav>
-</header>
-<div class="capa-container">
-<img class="capa" src="Capa.png"/>
-<div class="texto-capa">
-    Materiais elétricos e energia solar
-   </div>
-</div>
-<section id="sobre">
-<h2>
-    Sobre a Empresa
-   </h2>
-<p>
-    Somos especialistas em soluções de energia solar e fornecimento de materiais elétricos. A Solar Company do Brasil oferece tecnologia, economia e sustentabilidade para residências e empresas.
-   </p>
-</section>
-<section id="produtos">
-<h2>
-    Produtos
-   </h2>
+<div class="mobile-menu" id="mobileMenu"><a href="#home">Home</a><a href="#sobre">Sobre</a><a href="#produtos">Produtos</a><a href="#contato">Contato</a></div>
+</header> <div class="banner" id="home">
+<h1>Materiais elétricos e energia solar</h1>
+</div> <section id="sobre">
+<h2>Sobre a Empresa</h2>
+<p>Somos especialistas em soluções de energia solar e fornecimento de materiais elétricos. A Solar Company do Brasil oferece tecnologia, economia e sustentabilidade para residências e empresas.</p>
+</section> <section id="produtos">
+<h2>Produtos</h2>
 <div class="produtos">
 <div class="produto">
-<img alt="Painel Solar" src="Secaosolar.png"/>
-<h3>
-      Energia Solar
-     </h3>
-<p>
-      Alta eficiência e durabilidade
-     </p>
-</div>
+<img alt="Painel Solar" src="Secaosolar.png">
+<h3>Energia Solar</h3>
+<p>Alta eficiência e durabilidade</p>
+</img></div>
 <div class="produto">
 <img alt="Fios e Cabos" src="MateriaisEletricos_final.png"/>
-<h3>
-      Materiais Elétricos
-     </h3>
-<p>
-      Materiais de qualidade para instalações seguras
-     </p>
+<h3>Materiais Elétricos</h3>
+<p>Materiais de qualidade para instalações seguras</p>
 </div>
 <div class="produto">
 <img alt="Materiais Hidráulicos" src="MateriaisHidraulicos_final.png"/>
-<h3>
-      Materiais Hidráulicos
-     </h3>
-<p>
-      Componentes para sistemas hidráulicos e sanitários
-     </p>
+<h3>Materiais Hidráulicos</h3>
+<p>Componentes para sistemas hidráulicos e sanitários</p>
 </div>
 </div>
-</section>
-<section id="contato">
-<h2>
-    Contato
-   </h2>
-<p>
-<strong>
-     Endereço:
-    </strong>
-    Av. Amazonas, 1521 - Brasileia - Betim
-   </p>
-<p>
-<strong>
-     Telefone:
-    </strong>
-    (31) 3592-3190
-   </p>
-<p>
-<strong>
-     Email:
-    </strong>
-    solarcompanydobrasil@gmail.com
-   </p>
-<p>
-<strong>
-     Atendimento:
-    </strong>
-    Seg à Sex 7h às 17:30h | Sáb 7h às 12:30h
-   </p>
-<iframe allowfullscreen="" class="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.3085659429024!2d-44.21132512475406!3d-19.974832881428973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690d8e5e5d5d1%3A0x123456789abcdef!2sAv.%20Amazonas%2C%201521%20-%20Brasileia%2C%20Betim%20-%20MG%2C%2032650-150!5e0!3m2!1spt-BR!2sbr!4v1718400000000!5m2!1spt-BR!2sbr">
-</iframe>
-</section>
-<a class="whatsapp" href="https://wa.me/553135923190" target="_blank">
-   Fale conosco no WhatsApp
+</section> <section id="contato">
+<h2>Contato</h2>
+<p><strong>Endereço:</strong> Av. Amazonas, 1521 - Brasileia - Betim</p>
+<p><strong>Telefone:</strong> (31) 3592-3190</p>
+<p><strong>Email:</strong> solarcompanydobrasil@gmail.com</p>
+<p><strong>Atendimento:</strong> Seg à Sex 7h às 17:30h | Sáb 7h às 12:30h</p>
+<iframe class="mapa" src="https://www.google.com/maps?q=Av.+Amazonas,+1521+-+Brasileia+-+Betim&amp;output=embed"></iframe>
+</section> <a class="whatsapp" href="https://wa.me/553135923190" target="_blank">
+    Fale conosco no WhatsApp
   </a>
-<script>
-   function toggleMobileMenu() {
-  const menu = document.getElementById("mobileMenu");
-  if (menu.style.width === "250px") {
-    menu.style.width = "0";
-  } else {
-    menu.style.width = "250px";
-  }
-}
-  </script>
 </body>
 </html>
