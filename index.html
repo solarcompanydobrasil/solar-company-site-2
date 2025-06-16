@@ -132,10 +132,12 @@
         margin-top: 1rem;
       }
       .banner {
-        height: auto;
+        min-height: 300px;
       }
       .banner-text {
         position: relative;
+        text-align: center;
+        font-size: 1.8rem;
         transform: none;
         background: rgba(0,0,0,0.6);
         width: 100%;
@@ -147,6 +149,7 @@
     }
   
     .hamburger {
+  margin-right: auto;
       display: none;
       font-size: 28px;
       cursor: pointer;
@@ -172,6 +175,7 @@
         display: none;
       }
       .hamburger {
+  margin-right: auto;
         display: block;
       }
       .mobile-menu.show {
@@ -190,7 +194,8 @@
       <strong>Solar Company do Brasil</strong>
     </div>
     
-    <div class="menu-links desktop-menu"></div><div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger left" onclick="toggleMenu()">☰</div>
+    <div class="menu-links desktop-menu">
     
       <a href="#home">Home</a>
       <a href="#sobre">Sobre</a>
