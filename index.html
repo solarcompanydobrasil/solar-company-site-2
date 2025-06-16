@@ -465,8 +465,40 @@ img.capa {
       display: flex;
     }
   }
-  </style>
+  
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.whatsapp {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.produto:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+</style>
+
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 </head>
+
 <body>
 <div class="mobile-menu-overlay-right" id="mobileMenu">
 <div class="mobile-menu-content">
@@ -522,7 +554,7 @@ img.capa {
     Materiais elétricos e energia solar
    </div>
 </div>
-<section id="sobre">
+<section id="sobre" data-aos="fade-up">
 <h2>
     Sobre a Empresa
    </h2>
@@ -530,12 +562,12 @@ img.capa {
     Somos especialistas em soluções de energia solar e fornecimento de materiais elétricos. A Solar Company do Brasil oferece tecnologia, economia e sustentabilidade para residências e empresas.
    </p>
 </section>
-<section id="produtos">
+<section id="produtos" data-aos="fade-up">
 <h2>
     Produtos
    </h2>
 <div class="produtos">
-<div class="produto">
+<div class="produto" data-aos="zoom-in">
 <img alt="Painel Solar" src="Secaosolar.png"/>
 <h3>
       Energia Solar
@@ -544,7 +576,7 @@ img.capa {
       Alta eficiência e durabilidade
      </p>
 </div>
-<div class="produto">
+<div class="produto" data-aos="zoom-in">
 <img alt="Fios e Cabos" src="MateriaisEletricos_final.png"/>
 <h3>
       Materiais Elétricos
@@ -553,7 +585,7 @@ img.capa {
       Materiais de qualidade para instalações seguras
      </p>
 </div>
-<div class="produto">
+<div class="produto" data-aos="zoom-in">
 <img alt="Materiais Hidráulicos" src="MateriaisHidraulicos_final.png"/>
 <h3>
       Materiais Hidráulicos
@@ -564,7 +596,7 @@ img.capa {
 </div>
 </div>
 </section>
-<section id="contato">
+<section id="contato" data-aos="fade-up">
 <h2>
     Contato
    </h2>
